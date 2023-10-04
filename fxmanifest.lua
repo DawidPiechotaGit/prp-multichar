@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-description 'QB-Multicharacter'
+description 'PRP-Multicharacter'
 version '1.2.0'
 
 shared_scripts {

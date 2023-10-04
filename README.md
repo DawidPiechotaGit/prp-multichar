@@ -1,4 +1,4 @@
-# qb-multicharacter
+# prp-multicharacter
 
 Multi Character Feature for QB-Core Framework :people_holding_hands:
 

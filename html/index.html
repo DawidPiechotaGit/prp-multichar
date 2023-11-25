@@ -342,25 +342,19 @@
             if (calc > 0) {
               this.selectedCharacter = calc;
               this.click_character(this.selectedCharacter);
-              console.log("selecting " + this.selectedCharacter);
             } else {
-              console.log("less than 0");
               this.selectedCharacter = this.characterAmount;
               this.click_character(this.selectedCharacter);
-              console.log("selecting " + this.selectedCharacter);
             }
           }
           if (type == "right") {
             var calc = this.selectedCharacter + 1;
             if (calc > this.characterAmount) {
-              console.log("higher than  character amount");
               this.selectedCharacter = 1;
               this.click_character(this.selectedCharacter);
-              console.log("selecting " + this.selectedCharacter);
             } else {
               this.selectedCharacter = calc;
               this.click_character(this.selectedCharacter);
-              console.log("selecting " + this.selectedCharacter);
             }
           }
         },
@@ -431,12 +425,6 @@
             "input[type='radio'][name='gender']:checked"
           ).val();
           this.registerData.date = $("#DateOfBirth").val();
-          console.log(this.registerData.nationality);
-          console.log(this.registerData.firstname);
-          console.log(this.registerData.lastname);
-          console.log(this.registerData.gender);
-          console.log(this.registerData.date);
-
           const registerData = this.registerData;
           var profanityTest =
             !regTest.test(registerData.firstname) &&
@@ -549,6 +537,9 @@
                     viewmodel.show.characters = true;
                     axios.post("https://prp-multicharacter/removeBlur");
                   }, 2000);
+                  axios.post("https://prp-multicharacter/cDataPed", {
+                    cData: viewmodel.characters[1],
+                  });
                 }, 2000);
               }
               break;

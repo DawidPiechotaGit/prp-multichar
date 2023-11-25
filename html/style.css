@@ -20,7 +20,8 @@
   max-height: 30%;
   left: 40%;
   bottom: 8%;
-  background-color: rgb(27 33 49 / 95%);
+  /* background-color: rgb(27 33 49 / 95%); */
+  background: radial-gradient(#36495ed0, #1a1f24d0);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   padding: 30px;
@@ -36,7 +37,8 @@
   max-height: 10%;
   left: 34%;
   bottom: 14%;
-  background-color: rgb(27 33 49 / 95%);
+  /* background-color: rgb(27 33 49 / 95%); */
+  background: radial-gradient(#36495ed0, #1a1f24d0);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   padding: 30px;
@@ -52,7 +54,8 @@
   max-height: 10%;
   right: 34%;
   bottom: 14%;
-  background-color: rgb(27 33 49 / 95%);
+  /* background-color: rgb(27 33 49 / 95%); */
+  background: radial-gradient(#36495ed0, #1a1f24d0);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   padding: 30px;
@@ -77,8 +80,6 @@
   font-family: "Rajdhani";
   font-weight: 800;
   text-transform: uppercase;
-  /* font-family: "Bebas Neue", cursive; */
-  /* width: 150px; */
   width: 50%;
   height: 40px;
   border: none;
@@ -86,11 +87,10 @@
   border: 2px solid #32c5ff;
   background-color: #32adff46;
   color: rgb(255, 255, 255);
-  margin-left: 15px;
   border-radius: 5px;
   bottom: 30px;
+  right: 25%;
   /* right: 115px; */
-  right: 96px;
 
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -154,7 +154,7 @@
   border-radius: 5px;
   position: absolute;
   bottom: 30px;
-  left: 50px;
+  left: 15%;
 
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -187,7 +187,7 @@
   border-radius: 5px;
   position: absolute;
   bottom: 30px;
-  right: 50px;
+  left: 50%;
 
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -303,7 +303,8 @@
   right: 3%;
   top: 20%;
   padding: 30px;
-  background-color: rgb(27 33 49 / 95%);
+  /* background-color: rgb(27 33 49 / 95%); */
+  background: radial-gradient(#36495ed0, #1a1f24d0);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   overflow: visible !important;
@@ -369,7 +370,8 @@
   /* font-family: "Poppins", sans-serif; */
   font-family: "Rajdhani";
   color: #ededed;
-  background-color: rgb(27 33 49 / 95%);
+  /* background-color: rgb(27 33 49 / 95%); */
+  background: radial-gradient(#36495ed0, #1a1f24d0);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   top: 50%;
@@ -500,7 +502,8 @@ transition: all 0.3s ease-in-out; */
   padding: 30px;
   /* font-family: "Poppins", sans-serif; */
   font-family: "Rajdhani";
-  background-color: rgb(27 33 49 / 95%);
+  /* background-color: rgb(27 33 49 / 95%); */
+  background: radial-gradient(#36495ed0, #1a1f24d0);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   transition: 400ms;

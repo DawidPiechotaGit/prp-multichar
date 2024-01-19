@@ -9,21 +9,26 @@
   left: 0;
   top: 0;
   z-index: 100;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
 }
 
 .characters-list {
-  position: absolute;
+  /* position: absolute; */
   min-width: 20%;
   width: fit-content;
   min-height: 20%;
-  height: fit-content;
+  height: 400px;
   max-height: 30%;
-  left: 40%;
-  bottom: 8%;
+  /* left: 40%; */
+  /* bottom: 8%; */
   /* background-color: rgb(27 33 49 / 95%); */
-  background: radial-gradient(#36495ed0, #1a1f24d0);
+  /* background: radial-gradient(#36495ed0, #1a1f24d0); */
   border-radius: 5px;
-  box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+  /* box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px; */
   padding: 30px;
   transition: 400ms;
 }
@@ -35,10 +40,16 @@
   min-height: 5%;
   height: fit-content;
   max-height: 10%;
-  left: 34%;
-  bottom: 14%;
+  left: 80%;
+  bottom: 44%;
   /* background-color: rgb(27 33 49 / 95%); */
   background: radial-gradient(#36495ed0, #1a1f24d0);
+  background: radial-gradient(
+    circle,
+    rgba(199, 204, 208, 0.9444152661064426) 23%,
+    rgba(184, 187, 190, 0.9612219887955182) 65%
+  );
+  background: radial-gradient(circle, #81838a8c, #3f414acc 90%);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   padding: 30px;
@@ -52,10 +63,16 @@
   min-height: 5%;
   height: fit-content;
   max-height: 10%;
-  right: 34%;
-  bottom: 14%;
+  right: 6%;
+  bottom: 44%;
   /* background-color: rgb(27 33 49 / 95%); */
   background: radial-gradient(#36495ed0, #1a1f24d0);
+  background: radial-gradient(
+    circle,
+    rgba(199, 204, 208, 0.9444152661064426) 23%,
+    rgba(184, 187, 190, 0.9612219887955182) 65%
+  );
+  background: radial-gradient(circle, #81838a8c, #3f414acc 90%);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   padding: 30px;
@@ -80,16 +97,16 @@
   font-family: "Rajdhani";
   font-weight: 800;
   text-transform: uppercase;
-  width: 50%;
+  width: 10%;
   height: 40px;
   border: none;
   outline: none;
   border: 2px solid #32c5ff;
-  background-color: #32adff46;
+  /* background-color: #32adff46; */
   color: rgb(255, 255, 255);
   border-radius: 5px;
-  bottom: 30px;
-  right: 25%;
+  bottom: 80px;
+  right: 45%;
   /* right: 115px; */
 
   -webkit-transition: all 0.3s ease-in-out;
@@ -118,8 +135,8 @@
   text-transform: uppercase;
   border: none;
   outline: none;
-  border: 2px solid #54ff32;
-  background-color: #6cff3234;
+  border: 2px solid #5ed3ed;
+  /* background-color: #6cff3234; */
   color: rgb(255, 255, 255);
   border-radius: 8px;
 
@@ -129,12 +146,11 @@
 }
 
 .CreateCharacterbtn2:hover {
-  background-color: #6cff3263;
+  background-color: #22e5e534;
   scale: 1.01;
 }
 
 .PlayCharacterbtn {
-  position: absolute;
   letter-spacing: 1px;
   font-size: 20px;
   /* font-family: "Bebas Neue", cursive; */
@@ -148,13 +164,13 @@
   border: none;
   outline: none;
   border: 2px solid #54ff32;
-  background-color: #6cff3234;
+  /* background-color: #6cff3234; */
   color: rgb(255, 255, 255);
-  margin-left: 15px;
+  /* margin-left: 15px; */
   border-radius: 5px;
   position: absolute;
-  bottom: 30px;
-  left: 15%;
+  bottom: 80px;
+  right: 53%;
 
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -167,7 +183,6 @@
 }
 
 .DeleteCharacterbtn {
-  position: absolute;
   letter-spacing: 1px;
   font-size: 20px;
   /* font-family: "Bebas Neue", cursive; */
@@ -181,13 +196,13 @@
   border: none;
   outline: none;
   border: 2px solid #ff3232;
-  background-color: #ff32322f;
+  /* background-color: #ff32322f; */
   color: rgb(255, 255, 255);
-  margin-left: 15px;
+  /* margin-left: 15px; */
   border-radius: 5px;
   position: absolute;
-  bottom: 30px;
-  left: 50%;
+  bottom: 80px;
+  right: 42%;
 
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -222,12 +237,12 @@
 
 .character-list-header > p {
   text-align: center;
-  font-size: 2vh;
+  font-size: 8vh;
   margin-top: 1vh;
   /* font-family: "Poppins", sans-serif; */
   font-family: "Rajdhani";
   letter-spacing: 0.1vh;
-  font-weight: 900;
+  /* font-weight: 900; */
   color: #ededed;
 }
 
@@ -305,6 +320,12 @@
   padding: 30px;
   /* background-color: rgb(27 33 49 / 95%); */
   background: radial-gradient(#36495ed0, #1a1f24d0);
+  background: radial-gradient(
+    circle,
+    rgba(199, 204, 208, 0.9444152661064426) 23%,
+    rgba(184, 187, 190, 0.9612219887955182) 65%
+  );
+  background: radial-gradient(circle, #81838a8c, #3f414acc 90%);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   overflow: visible !important;
@@ -372,6 +393,7 @@
   color: #ededed;
   /* background-color: rgb(27 33 49 / 95%); */
   background: radial-gradient(#36495ed0, #1a1f24d0);
+  background: radial-gradient(circle, #81838a8c, #3f414acc 90%);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   top: 50%;
@@ -494,7 +516,7 @@ transition: all 0.3s ease-in-out; */
   position: relative;
   width: 30%;
   height: fit-content;
-  top: 50%;
+  top: -20%;
   transform: translateY(-50%);
   margin-left: auto;
   margin-right: auto;
@@ -504,6 +526,12 @@ transition: all 0.3s ease-in-out; */
   font-family: "Rajdhani";
   /* background-color: rgb(27 33 49 / 95%); */
   background: radial-gradient(#36495ed0, #1a1f24d0);
+  background: radial-gradient(
+    circle,
+    rgba(199, 204, 208, 0.9444152661064426) 23%,
+    rgba(184, 187, 190, 0.9612219887955182) 65%
+  );
+  background: radial-gradient(circle, #81838a8c, #3f414acc 90%);
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
   transition: 400ms;
@@ -824,4 +852,11 @@ input::placeholder {
   background-color: #48617a;
   border-radius: 10px;
   border: transparent;
+}
+
+.start-btn {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 25px;
 }

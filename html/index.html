@@ -103,6 +103,7 @@
                 </div>
                 <hr />
 
+                <!-- <div class="start-btn"> -->
                 <button
                   class="PlayCharacterbtn"
                   v-ripple
@@ -118,6 +119,7 @@
                 >
                   Delete
                 </button>
+                <!-- </div> -->
               </div>
             </div>
 
@@ -297,8 +299,8 @@
         chardata: {},
         show: {
           loading: false,
-          characters: true,
-          register: true,
+          characters: false,
+          register: false,
           delete: false,
         },
         registerData: {
@@ -536,10 +538,10 @@
                     viewmodel.show.loading = false;
                     viewmodel.show.characters = true;
                     axios.post("https://prp-multicharacter/removeBlur");
+                    axios.post("https://prp-multicharacter/cDataPed", {
+                      cData: viewmodel.characters[1],
+                    });
                   }, 2000);
-                  axios.post("https://prp-multicharacter/cDataPed", {
-                    cData: viewmodel.characters[1],
-                  });
                 }, 2000);
               }
               break;

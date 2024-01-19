@@ -162,7 +162,7 @@ RegisterNUICallback('cDataPed', function(nData, cb)
                     end
                     TaskPlayAnim(charPed, "timetable@ron@ig_3_couch", "base", 8.0, -8.0, -1, 1, 0, false, false, false)
 
-                    exports['illenium-appearance']:setPedAppearance(charPed, skinData)
+                    exports['prp_appearance']:setPedAppearance(charPed, skinData)
                 end)
             else
                 CreateThread(function()

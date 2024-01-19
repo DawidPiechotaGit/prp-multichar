@@ -95,7 +95,8 @@ RegisterNetEvent('qb-multicharacter:server:loadUserData', function(cData)
         print('^2[qb-core]^7 '..GetPlayerName(src)..' (Citizen ID: '..cData.citizenid..') has succesfully loaded!')
         QBCore.Commands.Refresh(src)
         loadHouseData(src)
-        TriggerClientEvent('apartments:client:setupSpawnUI', src, cData)
+        -- TriggerClientEvent('apartments:client:setupSpawnUI', src, cData)
+        TriggerClientEvent('ps-housing:client:setupSpawnUI', src, cData)
         TriggerEvent("qb-log:server:CreateLog", "joinleave", "Loaded", "green", "**".. GetPlayerName(src) .. "** (<@"..(QBCore.Functions.GetIdentifier(src, 'discord'):gsub("discord:", "") or "unknown").."> |  ||"  ..(QBCore.Functions.GetIdentifier(src, 'ip') or 'undefined') ..  "|| | " ..(QBCore.Functions.GetIdentifier(src, 'license') or 'undefined') .." | " ..cData.citizenid.." | "..src..") loaded..")
     end
 end)
@@ -109,24 +110,25 @@ RegisterNetEvent('qb-multicharacter:server:createCharacter', function(data)
         repeat
             Wait(10)
         until hasDonePreloading[src]
-        if Apartments.Starting then
+        -- if Apartments.Starting then
             local randbucket = (GetPlayerPed(src) .. math.random(1,999))
             SetPlayerRoutingBucket(src, randbucket)
             print('^2[qb-core]^7 '..GetPlayerName(src)..' has succesfully loaded!')
             QBCore.Commands.Refresh(src)
             loadHouseData(src)
             TriggerClientEvent("qb-multicharacter:client:closeNUI", src)
-            TriggerClientEvent('apartments:client:setupSpawnUI', src, newData)
+            -- TriggerClientEvent('apartments:client:setupSpawnUI', src, newData)
+            TriggerClientEvent('ps-housing:client:setupSpawnUI', src, newData)
             GiveStarterItems(src)
             exports['um-idcard']:CreateMetaLicense(src, {'id_card','driver_license', 'weaponlicense'})
-        else
-            print('^2[qb-core]^7 '..GetPlayerName(src)..' has succesfully loaded!')
-            QBCore.Commands.Refresh(src)
-            loadHouseData(src)
-            TriggerClientEvent("qb-multicharacter:client:closeNUIdefault", src)
-            GiveStarterItems(src)
-            exports['um-idcard']:CreateMetaLicense(src, {'id_card','driver_license', 'weaponlicense'})
-        end
+        -- else
+        --     print('^2[qb-core]^7 '..GetPlayerName(src)..' has succesfully loaded!')
+        --     QBCore.Commands.Refresh(src)
+        --     loadHouseData(src)
+        --     TriggerClientEvent("qb-multicharacter:client:closeNUIdefault", src)
+        --     GiveStarterItems(src)
+        --     exports['um-idcard']:CreateMetaLicense(src, {'id_card','driver_license', 'weaponlicense'})
+        -- end
     end
 end)
 

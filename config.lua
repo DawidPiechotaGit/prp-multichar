@@ -15,8 +15,8 @@ Config.PlayersNumberOfCharacters = { -- Define maximum amount of player characte
 
 Config.Locations = {
     [1] = {
-        PedCoords = vector4(934.1348, 21.6631, 112.5672, 330.9125),
+        PedCoords = vector4(908.5007, 52.5293, 111.7011, 313.4022),
         HiddenCoords = vector4(973.55, 77.18, 116.18, 225.01),
-        CamCoords = vector4(936.5123, 25.6663, 112.8719, 147.6065),
+        CamCoords = vector4(910.6412, 54.0283, 111.7010, 122.1459),
     }
 }
